@@ -6,13 +6,13 @@ title: Apps
 
 <ul id="results-container"></ul>
 
-<script src="{{ site.baseurl }}/simple-jekyll-search.js"></script>
+<script src="{{ 'simple-jekyll-search.js' | relative_url }}/"></script>
 
 <script>
   window.simpleJekyllSearch = new SimpleJekyllSearch({
 	searchInput: document.getElementById('search-input'),
 	resultsContainer: document.getElementById('results-container'),
-	json: '{{ site.baseurl }}/apps.json',
+	json: '{{ "apps.json" | relative_url }}',
 	searchResultTemplate: '<li><a href="{url}" target="_blank">{name}</a></li>',
 	noResultsText: 'No results found',
 	limit: 20,
