@@ -6,7 +6,7 @@ title: Apps
 
 <ul id="results-container"></ul>
 
-<script src="{{ 'simple-jekyll-search.js' | relative_url }}/"></script>
+<script src="{{ 'simple-jekyll-search.js' | relative_url }}"></script>
 
 <script>
   window.simpleJekyllSearch = new SimpleJekyllSearch({
