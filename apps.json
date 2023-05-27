@@ -5,14 +5,13 @@ layout: none
 	assign all_files = site.static_files
 	| where: "extname", ".apk"
 	| sort: "name"
-%}
+-%}
 [
 {% for file in all_files %}
-{%- assign dir = file.path | split: "/" | first-%}
 {
 "name" : "{{ file.name }}",
-"url"  : "{{ file.baseurl }}{{ file.path }}",
-"date" : "{{ file.modified_time | file_size }}",
+"url"  : "{{ file.path | relative_url}}",
+"date" : "{{ file.modified_time }}"
 } {% unless forloop.last %},{% endunless %}
 {% endfor %}
 ]
