@@ -42,7 +42,7 @@ setTimeout(setInput, 500);
 
 <br>
 <hr>
-[test](./?q=test)
+<a href="./?q=test">test</a>
 <br>
 
 
