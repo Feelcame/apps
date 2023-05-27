@@ -42,6 +42,7 @@ setTimeout(setInput, 500);
 
 <br>
 <hr>
+[test](./?q=test)
 <br>
 
 
