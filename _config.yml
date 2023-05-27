@@ -9,7 +9,7 @@ highlighter: rouge
 #commonmark:
 #  options: ["SMART", "FOOTNOTES"]
 #  extensions: ["strikethrough", "autolink", "tables"]
-baseurl: /apps/
+baseurl: /
 timezone: Europe/Kiev
 plugins:
   - jekyll-redirect-from
