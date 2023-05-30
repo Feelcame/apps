@@ -1,15 +1,11 @@
 # This is configuration file
 title: Apps
 description: 
-theme: 
+#theme: 
 markdown: kramdown
 highlighter: rouge
-#markdown: GFM
-#markdown: CommonMarkGhPages
-#commonmark:
-#  options: ["SMART", "FOOTNOTES"]
-#  extensions: ["strikethrough", "autolink", "tables"]
-baseurl: /
+url: ""
+baseurl: ""
 timezone: Europe/Kiev
 plugins:
   - jekyll-redirect-from
@@ -20,10 +16,5 @@ plugins:
 kramdown:
   parse_span_html: true
   parse_block_html: true
-timezone: Europe/Kiev
 
-defaults:
-- scope:
-    type: pages
-  values:
-    layout: default
+
