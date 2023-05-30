@@ -40,12 +40,14 @@ return false;
 setTimeout(setInput, 500);
 </script>
 
-<br>
+
 <hr>
 <a href="./?q=test">test</a>
 <br>
 
-
+<div>
+{{ site.theme }}
+</div>
 </div>
 
 
