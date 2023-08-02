@@ -46,11 +46,11 @@ setTimeout(setInput, 500);
 <hr>
 <b>Попробуйте также поискать здесь:</b><br>
 <script>
-document.write('<a href="https://play.google.com/store/apps/details?id=' + parameter + '">Google Play</a><br>');
-document.write('<a href="https://4pda.to/forum/index.php?act=search&query=' + parameter + '&username=&forums%5B%5D=212&subforums=1&source=pst&sort=rel&result=topics">4PDA</a><br>');
-document.write('<a href="https://f-droid.org/packages/' + parameter + '/">F-Droid</a><br>');
-document.write('<a href="https://apkcombo.com/ru/' + parameter + '/download/apk">apkcombo (скачать APK)</a><br>');
-document.write('<a href="https://apkcombo.com/ru/search/' + parameter + '">apkcombo (поиск)</a><br>');
+document.write('<ul><li><a href="https://play.google.com/store/apps/details?id=' + parameter + '">Google Play</a></li>');
+document.write('<li><a href="https://4pda.to/forum/index.php?act=search&query=' + parameter + '&username=&forums%5B%5D=212&subforums=1&source=pst&sort=rel&result=topics">4PDA</a></li>');
+document.write('<li><a href="https://f-droid.org/packages/' + parameter + '/">F-Droid</a></li>');
+document.write('<li><a href="https://apkcombo.com/ru/' + parameter + '/download/apk">apkcombo (скачать APK)</a></li>');
+document.write('<li><a href="https://apkcombo.com/ru/search/' + parameter + '">apkcombo (поиск)</a></li></ul>');
 </script>
 
 
@@ -61,8 +61,9 @@ document.write('<a href="https://apkcombo.com/ru/search/' + parameter + '">apkco
 
 <hr>
 
-<div>
-Github Pages | {{ site.theme }}
+<div style="text-align: center;">
+@Feelcame<br>
+{{ site.theme }}
 </div>
 </div>
 
