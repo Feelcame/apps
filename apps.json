@@ -10,8 +10,7 @@ layout: none
 {% for file in all_files %}
 {
 "name" : "{{ file.name }}",
-"url"  : "{{ file.path | relative_url}}",
-"date" : "{{ file.modified_time }}"
+"url"  : "{{ file.path | relative_url}}"
 } {% unless forloop.last %},{% endunless %}
 {% endfor %}
 ]
