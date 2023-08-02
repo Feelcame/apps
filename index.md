@@ -23,12 +23,10 @@ title: Apps
 
 
 <script>
-var parameter = ""; 
-parameter = decodeURIComponent(window.location.search.substring(1)).split("&")[0];
-function setInput () {
-var query = parameter;
+var query = decodeURIComponent(window.location.search.substring(1)).split("&")[0];
 var key = query.split("=")[0];
 var val = query.split("=")[1];
+function setInput () {
 var field = document.getElementById('search-input');
 	if (key == "q" && val.length > 0) {
 		field.value = val;
@@ -46,24 +44,24 @@ setTimeout(setInput, 500);
 <hr>
 <b>Попробуйте также поискать здесь:</b><br>
 <script>
-document.write('<ul><li><a href="https://play.google.com/store/apps/details?id=' + parameter + '">Google Play</a></li>');
-document.write('<li><a href="https://4pda.to/forum/index.php?act=search&query=' + parameter + '&username=&forums%5B%5D=212&subforums=1&source=pst&sort=rel&result=topics">4PDA</a></li>');
-document.write('<li><a href="https://f-droid.org/packages/' + parameter + '/">F-Droid</a></li>');
-document.write('<li><a href="https://apkcombo.com/ru/' + parameter + '/download/apk">apkcombo (скачать APK)</a></li>');
-document.write('<li><a href="https://apkcombo.com/ru/search/' + parameter + '">apkcombo (поиск)</a></li></ul>');
+document.write('<ul><li><a href="https://play.google.com/store/apps/details?id=' + val + '" target="_blank">Google Play</a></li>');
+document.write('<li><a href="https://4pda.to/forum/index.php?act=search&query=' + val + '&username=&forums%5B%5D=212&subforums=1&source=pst&sort=rel&result=topics" target="_blank">4PDA</a></li>');
+document.write('<li><a href="https://f-droid.org/packages/' + val + '/" target="_blank">F-Droid</a></li>');
+document.write('<li><a href="https://apkcombo.com/ru/' + val + '/download/apk" target="_blank">apkcombo (скачать APK)</a></li>');
+document.write('<li><a href="https://apkcombo.com/ru/search/' + val + '" target="_blank">apkcombo (поиск)</a></li></ul>');
 </script>
 
 
 <hr>
 Протестировать:<br>
-<a href="./?q=test">test</a>
+<a href="./?q=test">Поиск test</a>, 
 <a href="/apps.json">список (json)</a>
 <br>
 
 <hr>
 
 <div style="text-align: center;">
-@Feelcame<br>
+<a href="https://github.com/Feelcame/apps" target="_blank">@Feelcame</a>a<br>
 {{ site.theme }}
 </div>
 </div>
