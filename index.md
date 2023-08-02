@@ -23,8 +23,10 @@ title: Apps
 
 
 <script>
+var parameter = ""; 
+parameter = decodeURIComponent(window.location.search.substring(1)).split("&")[0];
 function setInput () {
-var query = decodeURIComponent(window.location.search.substring(1)).split("&")[0];
+var query = parameter;
 var key = query.split("=")[0];
 var val = query.split("=")[1];
 var field = document.getElementById('search-input');
@@ -44,6 +46,17 @@ setTimeout(setInput, 500);
 <hr>
 <a href="./?q=test">test</a>
 <br>
+
+<hr>
+
+<script>
+document.write('<a href="https://play.google.com/store/apps/details?id=' + parameter + '">Google Play</a><br>');
+document.write('<a href="https://4pda.to/forum/index.php?act=search&query=' + parameter + '&username=&forums%5B%5D=212&subforums=1&source=pst&sort=rel&result=topics">4PDA</a><br>');
+document.write('<a href="https://f-droid.org/packages/' + parameter + '/">F-Droid</a><br>');
+document.write('<a href="https://apkcombo.com/ru/' + parameter + '/download/apk">apkcombo (скачать APK)</a><br>');
+document.write('<a href="https://apkcombo.com/ru/search/' + parameter + '">apkcombo (поиск)</a><br>');
+</script>
+
 
 <div>
 {{ site.theme }}
