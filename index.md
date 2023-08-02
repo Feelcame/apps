@@ -55,7 +55,7 @@ document.write('<a href="https://apkcombo.com/ru/search/' + parameter + '">apkco
 
 
 <hr>
-Протестироват:<br>
+Протестировать:<br>
 <a href="./?q=test">test</a>
 <br>
 
