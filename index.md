@@ -57,6 +57,7 @@ document.write('<li><a href="https://apkcombo.com/ru/search/' + parameter + '">a
 <hr>
 Протестировать:<br>
 <a href="./?q=test">test</a>
+<a href="/apps.json">список (json)</a>
 <br>
 
 <hr>
