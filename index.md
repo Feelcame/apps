@@ -61,7 +61,7 @@ document.write('<li><a href="https://apkcombo.com/ru/search/' + val + '" target=
 <hr>
 
 <div style="text-align: center;">
-<a href="https://github.com/Feelcame/apps" target="_blank">@Feelcame</a>a<br>
+<a href="https://github.com/Feelcame/apps" target="_blank">@Feelcame</a><br>
 {{ site.theme }}
 </div>
 </div>
