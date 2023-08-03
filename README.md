@@ -11,5 +11,12 @@
 - https://apt.izzysoft.de/fdroid/index/apk/fe.linksheet
 - https://t.me/s/feelsoftan?q=com.opera.browser
 
+
+добавить больше ссылок:
+- copyright claims
+- json for tinstaller
+
+добавить иконки на сервисы скпчивания приложений
+
 ## использованные библиотеки
 - jekyll quick search
