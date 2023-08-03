@@ -45,7 +45,7 @@ setTimeout(setInput, 500);
 <b>Попробуйте также поискать здесь:</b><br>
 <script>
 document.write('<ul><li><a href="https://play.google.com/store/apps/details?id=' + val + '" target="_blank">Google Play</a></li>');
-document.write('<li><a href="https://4pda.to/forum/index.php?act=search&query=' + val + '&username=&forums%5B%5D=212&subforums=1&source=pst&sort=rel&result=topics" target="_blank">4PDA</a></li>');
+document.write('<li><a href="https://4pda.to/forum/index.php?act=search&query=' + val + '&username=&forums%5B%5D=212&subforums=1&source=pst&sort=rel&result=topics" target="_blank">Форум 4PDA (поиск)</a></li>');
 document.write('<li><a href="https://f-droid.org/packages/' + val + '/#latest" target="_blank">F-Droid</a></li>');
 document.write('<li><a href="https://search.f-droid.org/?q=' + val + '" target="_blank">F-Droid (поиск)</a></li>');
 document.write('<li><a href="https://apkcombo.com/ru/' + val + '/download/apk" target="_blank">apkcombo (скачать APK)</a></li>');
